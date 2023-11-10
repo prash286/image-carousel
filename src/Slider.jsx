@@ -24,21 +24,7 @@ export default function Slider() {
     gallaryContainerRef.current.children[0]?.classList.add("current");
     dotNavItems.current.childNodes[0].classList.add("current");
     updateWidth();
-    calculateInitialTranslateX(0);
   }, []);
-
-  // useEffect(() => {
-  //   function handleResize() {
-  //     updateWidth();
-  //     calculateInitialTranslateX(0);
-  //   }
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
 
   function updateWidth() {
     const screenWidth = window.innerWidth;
